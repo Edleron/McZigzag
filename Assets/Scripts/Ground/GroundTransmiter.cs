@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class GroundTransmiter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GroundController groundController;
 
-    // Update is called once per frame
-    void Update()
+    public void SetRigidbodyValues()
     {
-        
+        StartCoroutine(groundController.RigidbodyValues());
     }
 }

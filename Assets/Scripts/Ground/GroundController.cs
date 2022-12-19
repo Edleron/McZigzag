@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class GroundController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Rigidbody rb;
+
+    private void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public IEnumerator RigidbodyValues()
     {
-        
+        yield return new WaitForSeconds(0.75f);
+        rb.isKinematic = false;
+        rb.useGravity = true;
     }
 }
