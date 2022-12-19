@@ -733,7 +733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballTransmiter: {fileID: 1350553234}
-  moveSpeed: 5
+  moveSpeed: 2.5
 --- !u!114 &1350553233
 MonoBehaviour:
   m_ObjectHideFlags: 0
