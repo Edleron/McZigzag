@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Refactor startings
-    // Todo Plannings
     // Start is called before the first frame update
     void Start()
     {
